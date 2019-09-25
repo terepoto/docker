@@ -34,4 +34,4 @@ docker-composeにより、複数のコンテナの間で依存関係を築く。
 
     ・docker-php-ext-configure と docker-php-ext-installでPHPのブラグインをインストールできる。
     ・Dockerfileにapt-get updateでap-getの更新が必要、apt-getによる、各ブラグインのインストールができる。
-
+    ・mysqlとの接続には、localhostや127.0.0.1では無理、何故なら、dokcerの中で127.0.0.1を使用すると、コンテナの向きが違う。なので、mysqlのhostがdockerのdbコンテナ名です、ご注意を。
