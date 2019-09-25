@@ -3,4 +3,4 @@ FROM  php:7.3-fpm-stretch
 RUN apt-get update && apt-get -y install git unzip zlib1g-dev libpq-dev libzip-dev libjpeg-dev libpng-dev
 RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
 RUN docker-php-ext-configure zip --with-libzip
-RUN docker-php-ext-install pdo_pgsql zip gd
+RUN docker-php-ext-install pdo_pgsql zip gd pdo_mysql mysqli
