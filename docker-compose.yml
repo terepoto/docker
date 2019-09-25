@@ -1,13 +1,13 @@
-version: "3.7"
+version: "2"
 services:
   node:
-    image: node:11-alpine
+    image: "node:11-alpine"
     user: "node"
     working_dir: /home/node/app
+    tty: true
     environment:
       - NODE_ENV=production
     volumes:
       - ./:/home/node/app
     ports:
-      - 8080:8080
-    command: "npm start"
+      - "8080:8080"

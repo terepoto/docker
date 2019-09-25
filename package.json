@@ -1,0 +1,19 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "色々考えた後、やっはり自分で環境構築したいな～",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terepoto/docker.git"
+  },
+  "author": "terepoto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terepoto/docker/issues"
+  },
+  "homepage": "https://github.com/terepoto/docker#readme"
+}
